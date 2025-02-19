@@ -103,8 +103,9 @@
             top: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+            backdrop-filter: blur(10px);
         }
 
         nav a {
@@ -112,6 +113,10 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #007BFF;
         }
     </style>
 </head>
@@ -162,9 +167,9 @@
         <div class="profile-container">
             <h3 class="titles">Connect with Me</h3>
             <div class="social-links">
-                <a href="https://github.com/Raresasore" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/brandon-lim-b0364a191/" target="_blank">LinkedIn</a> |
-                <a href="mailto:mattchan20000@gmail.com">Email</a>
+                <a href="https://github.com/Raresasore" target="_blank"><i class="fab fa-github"></i>GitHub</a> |
+                <a href="https://www.linkedin.com/in/brandon-lim-b0364a191/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
+                <a href="mailto:mattchan20000@gmail.com"><i class="fas fa-envelope"></i>Email</a>
             </div>
         </div>
     </section>
