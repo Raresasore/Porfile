@@ -10,12 +10,8 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-image: url('background.jpg');
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
-            background-repeat: no-repeat;
             background-color: #f4f4f4;
+            scroll-behavior: smooth; 
         }
         .profile-container {
             max-width: 600px;
@@ -25,46 +21,87 @@
             box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
             border-radius: 10px;
         }
-        img {
-            width: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+
+        #home {
+            background: url('background.png') no-repeat center center/cover;
         }
-        p {
-            color: #666;
+
+        #about {
+            background: #222;
         }
-        .social-links a {
+
+        #funfact {
+            background: #222;
+        }
+        #social-links {
+            background: #111;
             margin: 10px;
             text-decoration: none;
             color: #007BFF;
         }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#funfact">Fun Facts</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <div class="profile-container">
-        <h1>Welcome to my profile</h1>
+    <section id="home">
+        <h1>Welcome to My Profile</h1>
         <p>Web Developer | Tech Enthusiast</p>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
         <p>Welcome to my personal profile page. I love coding and learning new things every day.</p>
         <p>Name - Brandon Lim</p>
         <p>Pronouns - He/Him</p>
         <p>Degree - Computer Science</p>
         <p>Year - 1st Year </p>
+    </section>
+
+    <section id="funfact">
         <p>Some personal hobbies of mine include</p>
         <p>Football</p>
         <p>Music eg. Metal, Rock, R&B</p>
         <p>Gaming</p>
+    </section>
 
-        <h3>Connect with me:</h3>
-        <div class="social-links">
-            <a href="https://github.com/Raresasore" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/brandon-lim-b0364a191/" target="_blank">LinkedIn</a> |
-            <a href="mailto:mattchan20000@gmail.com">Email</a>
+    <section id="social">
+        <div class="profile-container">
+            <h1>Connect with Me</h1>
+            <div class="social-links">
+                <a href="https://github.com/Raresasore" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/brandon-lim-b0364a191/" target="_blank">LinkedIn</a> |
+                <a href="mailto:mattchan20000@gmail.com">Email</a>
+            </div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
